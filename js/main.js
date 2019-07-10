@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
+//Nav translate    
 var estActif = false;
 
-$('.menu').on('click', function(){
+$('.menu').on('click', function (){
     if (estActif){
         $(this).removeClass('active');
         $('body').removeClass('menu-open');

@@ -18,12 +18,12 @@ $color : #33658a;
 .folio
 {
     
-    height: 90vh;
+    height: auto;
     overflow: hidden;
 }
 
 .presentation{
-    background: rgb(238, 175, 175);
+    
     height: auto;
 }
 .folio
@@ -32,13 +32,35 @@ $color : #33658a;
 }
 
 .skills{
-    background-color: rgb(105, 143, 105);
+    background-color: rgba(41, 41, 41, 0.8);
+    h2{
+        color: #fff;
+    }
+    .container{
+        padding-left: 5rem;
+        .row{
+            padding: 0 0;
+            margin-left: -34px;
+        }
+    }
+    .fab {
+        color: $color;
+        font-size: 8rem;
+        margin-bottom: 4rem;
+    }
+    .img_skills
+    {
+        width: 112px;
+        height: 148px;
+        margin-bottom: 4rem;
+    }
 }
 .contact{
     background-color: rgba(179, 161, 122, 0.883);
 }
 .hobbies
 {
+   
     background-color: rgba(0, 0, 0, 0.7);
     height:auto;
     color: rgb(255, 255, 255);

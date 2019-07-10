@@ -14,9 +14,13 @@
   
 </head>
 <body>
-
+  <!--Preloader page-->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  
       
-      <header class=" parallax-window " data-parallax="scroll" data-image-src="img/apple4.jpg" style='background-attachment: fixed;'>
+      <header class=" parallax-window " data-parallax="scroll" data-image-src="img/apple.jpg" style='background-attachment: fixed;' id="home" >
               <div class="menu">
                   <span class="menu__bar"></span>
               </div>
@@ -27,31 +31,32 @@
                          <img src="img/PhotoMariage.jpg" alt="">
                         </div>
 
-                    <div class="nav__container">
+                    <div class="nav__container" >
                         
                         <ul>
-                          <li><a href="#home"><i class="fas fa-home icon"></i><span>Home</span> </a></li>
-                          <li><a href="#about"><i class="fas fa-user icon"></i><span>About</span> </a></li>
-                          <li><a href="#folio"><i class="far fa-image icon"></i><span>Folio</span> </a></li>
-                          <li><a href="#contact"><i class="fas fa-envelope icon"></i><span>Contact</span></a></li>
+                          <li><a href="#home" id="link"><i class="fas fa-home icon"></i><span>Home</span> </a></li>
+                          <li><a href="#about" id="link"><i class="fas fa-user icon"></i><span>About</span> </a></li>
+                          <li><a href="#skills" id="link"><i class="fas fa-laptop-code icon"></i><span>Skills</span> </a></li>
+                          <li><a href="#folio" id="link"><i class="far fa-image icon"></i><span>Folio</span> </a></li>
+                          <li><a href="#contact" id="link"><i class="fas fa-envelope icon"></i><span>Contact</span></a></li>
                           
                         </ul>
                     </div>
               </nav>
               
               <div class="container banner d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="banner__title animated fadeInRight delay-0.5s" id="home" >BALOURD Imri</h1>
+                    <h1 class="banner__title animated fadeInRight delay-3s">BALOURD Imri</h1>
                     <h2 class="banner__text"> I am a <span class="type"></span></h2>
                     
                     <div class="banner__bottom mt-4"> <a href="#skills">
-                     <button class="banner__btn btn-outline-light btn-lg" data-aos="fade-up" data-aos-offset="100" data-aos-delay="2000" data-aos-duration="2000"  data-aos-easing="ease-in-out">
+                     <button class="banner__btn btn-outline-light btn-lg animated fadeInUp delay-5s" >
                       Découvrir
                      </button></a></div>
                      
                       
               </div>
 
-              <div class="header__bottom">
+              <div class="header__bottom " id="about">
                   <div class="header__mouse"></div>
               </div>
       </header>
@@ -62,7 +67,7 @@
 
               <!-------------------------- ABOUT---------------------------------->
                     <article class="presentation  col-12 mt-1 mb-2 pt-4 " data-aos="fade-up" data-aos-offset="100" data-aos-duration="1500" data-aos-delay="500" data-aos-easing="ease-in-out" >
-                      <h2 class="text-center title mb-2" id="about">Présentation</h2>
+                      <h2 class="text-center title mb-2" >Présentation</h2>
                       <div class="title__bar mt-1 mb-5"></div>
                       <div class="d-flex flex-wrap">
                       <div class="card col-lg-6 col-sm-12 mb-5"  >
@@ -81,26 +86,60 @@
                         </div>
                       </div>
                       </div>
-                      <div class="cross" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="2000" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
+                      <div class="cross" id="skills" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="2000" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
                     </article>
 
                      <!--------------------------- SKILLS --------------------------------->
-                    <article class="skills col-12  parallax-window pt-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"  data-aos-easing="ease-in-out">
-                        <h2 class="text-center title mb-2" id="skills">Compétences</h2>
+                    <article class="skills col-12 pt-4 " data-parallax="scroll" data-image-src="img/code.jpg" style='background-attachment: fixed;'>
+                       <h2 class="text-center title mb-2" >Compétences</h2>
+                            <div class="title__bar mt-1 mb-5"></div>
+
+                        <div class="container col-12 ">
+                           
+                          <div class="row col-lg-12 mb-4 d-flex justify-content-center text-center">
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"><i class="fab fa-html5"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"><i class="fab fa-css3-alt"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fab fa-js-square"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><i class="fab fa-php"></i></div>
+                         
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><img class="img_skills" src="img/mysql.svg" alt=""></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"><img class="img_skills" src="img/c-logo.svg" alt=""></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fab fa-python"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><i class="fab fa-wordpress-simple"></i></div>
+                          
+                          
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"><i class="fab fa-sass"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"><i class="fab fa-bootstrap"></i></div> 
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"><i class="fab fa-react"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fab fa-vuejs"></i></div>
+
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"><i class="fab fa-symfony"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"><i class="fab fa-git"></i></div>
+
+                          </div> <!--end of row-->
+                        <h2 class="text-center">Outils</h2>
                         <div class="title__bar mt-1 mb-5"></div>
-                        <div class="cross" data-aos="fade-up" data-aos-offset="-100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
+                          <div class="row col-lg-12 mb-4 d-flex justify-content-center text-center">
+
+                            <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"> <i class="fab fa-linux"></i></div>
+                            <div class=" col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><img class="img_skills" src="img/visual-studio.svg" alt=""></div>
+                        </div>
+                          
+                        </div>
+                        
+                        <div class="cross" id="folio" data-aos="fade-up" data-aos-offset="-100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
                     </article>
 
                      <!------------------------------FOLIO------------------------------>
                     <article class="folio col-12 pt-4">
-                        <h2 class="text-center title mb-2" id="folio">Portfolio</h2>
+                        <h2 class="text-center title mb-2" >Portfolio</h2>
                         <div class="title__bar mt-1 mb-5"></div>
-                        <div class="cross" data-aos="fade-up" data-aos-offset="-100" data-aos-duration="1000" data-aos-delay="1000" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
+                        <div class="cross" data-aos="fade-up" id="hobbies" data-aos-offset="-100" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
                     </article>
 
                      <!------------------------- HOBBIES----------------------------------->
                     <article class="hobbies col-12 pt-4 pb-1 parallax-window" data-parallax="scroll" data-image-src="img/apple2.jpg" style='background-attachment: fixed;'>
-                      <h2 class="text-center title mb-2" id="hobbies">Centres d'intérêts</h2>
+                      <h2 class="text-center title mb-2" >Centres d'intérêts</h2>
                       <div class="title__bar mt-1 mb-5"></div>
                       <div class="card container text-center">
                         <div class="card_body mb-5">
@@ -111,7 +150,7 @@
                         </div>
 
                         <div class="row d-flex flex-wrap justify-content-around">
-                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"  data-aos-delay="50" data-aos-easing="ease-in-out">
+                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"  data-aos-delay="50" data-aos-easing="ease-in-out">
                             <div class="card-body text-center">
                                 <i class="fas fa-camera"></i>
                               <h3>Photographer</h3>
@@ -119,7 +158,7 @@
                                     Minus qui at distinctio dolor earum. Impedit?</p>
                             </div>
                           </div>
-                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
                               <div class="card-body text-center">
                                   <i class="fas fa-video"></i>
                                   <h3>Video Art</h3>
@@ -127,7 +166,7 @@
                                         Minus qui at distinctio dolor earum. Impedit?</p>  
                                 </div>
                           </div>
-                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="350" data-aos-easing="ease-in-out">
+                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="350" data-aos-easing="ease-in-out">
                               <div class="card-body text-center">
                                   <i class="fas fa-desktop"></i>
                                   <h3>Web Design</h3>
@@ -135,7 +174,7 @@
                                        Minus qui at distinctio dolor earum. Impedit?</p>
                                 </div>
                           </div>
-                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="50" data-aos-easing="ease-in-out">
+                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="50" data-aos-easing="ease-in-out">
                               <div class="card-body text-center">
                                   <i class="fas fa-desktop"></i>
                                   <h3>Web Design</h3>
@@ -143,7 +182,7 @@
                                        Minus qui at distinctio dolor earum. Impedit?</p>
                                 </div>
                           </div>
-                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
+                          <div class="card mb-5"  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out">
                               <div class="card-body text-center">
                                   <i class="fas fa-desktop"></i>
                                   <h3>Web Design</h3>
@@ -151,7 +190,7 @@
                                        Minus qui at distinctio dolor earum. Impedit?</p>
                                 </div>
                           </div>
-                          <div class="card mb-5 "  data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000" data-aos-delay="350" data-aos-easing="ease-in-out">
+                          <div class="card mb-5 "  data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000" data-aos-delay="350" data-aos-easing="ease-in-out">
                               <div class="card-body text-center">
                                   <i class="fas fa-desktop"></i>
                                   <h3>Web Design</h3>
@@ -161,12 +200,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="cross" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
+                      <div class="cross" data-aos="fade-up" id="contact" data-aos-offset="50" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
                     </article>
 
                      <!-------------------------- CONTACT ---------------------------------->
                     <article class="contact col-12 pt-4">            
-                      <h2 class="text-center title mb-2" id="contact">Contact</h2>
+                      <h2 class="text-center title mb-2" >Contact</h2>
                       <div class="title__bar mt-1 mb-5"></div>
                       <div class="cross" data-aos="fade-up" data-aos-offset="50" data-aos-duration="1000" data-aos-delay="800" data-aos-easing="ease-in-out"><i class="fas fa-plus"></i></div>
                     </article>
@@ -177,7 +216,7 @@
 
       </main>
         <!--To top button-->
-      <div id="topBtn"> <i class=" fas fa-arrow-circle-up"></i></div>
+      <div id="topBtn"><i class=" fas fa-arrow-circle-up"></i></div>
 
 
       <footer class="col-12 d-flex justify-content-center align-items-center">
@@ -195,6 +234,8 @@
       </footer>            
 
       
+  
+    
       <!-- Get Boostrap scripts-->
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -204,9 +245,13 @@
        <!-- script -------------------->
       <script src="js/main.js"></script>
       
+      <!--Preloader script-->
+      <script>$(window).on('load', function(){
+        $('.preloader').addClass("complete")
+    })</script>
+      
       <!-- Get jQuery CDN-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
       <!-- Typer text Effect-->
       <script src="js/typed.min.js"></script>
 	  <script>

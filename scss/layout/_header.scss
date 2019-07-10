@@ -20,7 +20,7 @@ header{
 
 nav {
     
-    width: 15rem;
+    width: auto;
     height: 70vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
@@ -46,7 +46,7 @@ nav {
 {
    
     max-width: 96rem;
-    margin: 0 31% 0 0;
+    margin: 0 6% 0 0;
   
 }
 
@@ -64,7 +64,7 @@ nav {
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    filter: contrast(50%) brightness(60%); 
+    filter: contrast(92%) brightness(83%); 
 }
 
 nav ul 
@@ -129,6 +129,9 @@ header .icon {
 .banner__text{
     font-size: 2.5rem;
 }
+.type{
+    color: $color !important;
+}
 
 .banner__bottom{
     
@@ -148,12 +151,12 @@ header .icon {
         
     
     display: block;
-    padding: 9px 18px;
+    padding: 14px 18px;
     font-family: Poppins;
-    font-weight: 700;
+    font-weight: 700; 
     letter-spacing: 6px;
     color: #fff;
-    width: auto; 
+    width: auto;
     font-size: 13px;
     border: 2px solid #fff;
     text-transform: uppercase;
@@ -166,20 +169,24 @@ header .icon {
     transition: 1s ease-out;
 
         
-        &:before{
-            content: "";
-            background: #fff;
-            position:absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 100%;
-            z-index: -1;
-            transition: top 0.8s ease-out;
-        }
-        &:hover:before {
-            top: 0;
-        }
+    &:before{
+        content: "";
+        background: rgba(255,255,255,0.9);;
+        position:absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        transition: top 0.8s ease-out;
+    }
+    &:hover{
+        color:$color;
+    }
+    &:hover:before {
+        top: 0;
+        color: $color;
+    }
        
 
         
@@ -192,7 +199,7 @@ header .icon {
     bottom:2%;
     left:50%;
     transform: translate(-50%);
-    display: none;
+    
 }
 
 .header__mouse{
@@ -209,7 +216,7 @@ header .icon {
     height: 12px;
     position: absolute;
     top: 10%;
-    background: rgb(255, 255, 255);
+    background: $color;
     left: 50%;
     transform: translate(-50%);
     border-radius: 50%;
@@ -311,11 +318,12 @@ header .icon {
         height: 6rem;
         filter: contrast(103%) brightness(158%);
     }
-
+ 
     nav 
     {
-        width: 19rem;
-        height: auto;
+        width: auto;
+        padding: 0 6%;
+        height: auto; 
         background-color: #fff;
         position: fixed;
         transform: translateX(-50rem);
@@ -369,15 +377,17 @@ header .icon {
     }
 
 
-    .banner__title{
-        font-size: 3.5rem;
+    .banner__title{ 
+        font-size: 3.2rem;
     }
 
     
     
     .banner__text{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    
     }
+   
 }
 
 @media #{$medium-up}{
