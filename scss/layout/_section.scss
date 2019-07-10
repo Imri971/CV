@@ -1,0 +1,92 @@
+$color : #33658a;
+
+.pb-4, .py-4 {
+
+    padding-bottom: 43.5rem !important;
+
+}
+
+.mb-7, .my-7 {
+
+    margin-bottom: 5rem !important;
+
+}
+.presentation,
+.skills,
+.hobbies,
+.contact,
+.folio
+{
+    
+    height: 90vh;
+    overflow: hidden;
+}
+
+.presentation{
+    background: rgb(238, 175, 175);
+    height: auto;
+}
+.folio
+{
+    background-color: #9090a5;
+}
+
+.skills{
+    background-color: rgb(105, 143, 105);
+}
+.contact{
+    background-color: rgba(179, 161, 122, 0.883);
+}
+.hobbies
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    height:auto;
+    color: rgb(255, 255, 255);
+    .card{
+        h1 {
+            font-size: 1.6rem;
+        }
+    }
+
+    .card-body
+    { 
+        width:18rem;
+        h3{
+            color: $color;
+        }
+    }
+
+    .fas{
+        border: 2px solid $color;
+        color: $color;
+        border-radius: 100%;
+        padding:7px;
+        &:last-child{
+            border:none;
+            border-radius: none;
+            padding: none;
+        }
+    }
+    
+
+}
+
+.title__bar{
+     
+    width: 4em;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 4px;
+    background: $color;
+}
+
+.cross{
+    font-size: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: $color;
+}
+
