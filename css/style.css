@@ -7176,7 +7176,7 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: rgba(41, 41, 41, 0.8);
   font-family: Poppins;
 }
 
@@ -7365,7 +7365,7 @@ header .icon {
 /*************************************************/
 @media screen and (max-width:898px) {
   header {
-    height: 50vh;
+    height: 80vh;
   }
 
   .menu {
@@ -7482,7 +7482,7 @@ header .icon {
 
   nav ul li {
     display: block;
-    padding: 1rem 1rem;
+    padding: 8px 1rem 3px;
   }
   nav ul li a {
     color: #000;
@@ -7494,7 +7494,7 @@ header .icon {
 
   header .icon {
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #33658a;
   }
 
