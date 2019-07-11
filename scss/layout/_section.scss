@@ -29,11 +29,12 @@ $color : #33658a;
 }
 .folio
 {
-    background-color: #ffffff;
+    background-color: #9090a5;
 }
  
 .skills{
-    background-color: rgba(41, 41, 41, 0.8);
+        background-color: #dddddd; 
+    
     
     
     .container{
@@ -132,12 +133,13 @@ $color : #33658a;
 
 
 @media #{$medium-md}{
+    .parallax-window {
+        min-height: 400px;
+        background: transparent;
+    }
 
-
-.skills{ 
-    background-color: #dddddd; 
-}
 .hobbies{
+
     background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #43434b);
 }
 

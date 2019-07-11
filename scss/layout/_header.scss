@@ -3,6 +3,7 @@
 @import "../libs/mixins";
 $color : #33658a;
 $font:  Poppins;
+
 //Header 
 header{
     width: 100%;
@@ -238,6 +239,10 @@ header .icon {
 /*************************************************/        
 @media #{$medium-md}{
    
+    .parallax-window {
+        min-height: 400px;
+        background: transparent;
+    }
     header{
            
         background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #6a6a76);
