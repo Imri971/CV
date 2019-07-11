@@ -43,5 +43,17 @@ $("#topBtn").click(function(){
 });
 
 
+          $(window).on("scroll",function(){
+              var y = $(this).scrollTop();
+              this.console.log(y);
+              if(y> 900 && y < 1700){
+            $('.skills__bar').each(function(){
+              $(this).find('.bar').animate({
+                width:$(this).attr('data-percent')
+              },4000);
+            });
+        }
+          });
+          
 
 });

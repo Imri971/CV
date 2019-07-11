@@ -46,15 +46,33 @@ $color : #33658a;
     .fab {
         color: $color;
         font-size: 8rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
     }
     .img_skills
     {
         width: 112px;
-        height: 148px;
-        margin-bottom: 4rem;
+        height: 128px;
+        margin-bottom: 2rem;
+    }
+
+    .skills__bar{
+        width: 9em;
+        height: 1rem; 
+        border-radius: 4px;
+        border: 2px solid $color;
+        margin: 10px auto 3rem;
+        transition:0.3s linear;
+	    transition-property:width, background-color;
+    }
+
+    .bar {
+        background-color: $color;
+        width: 0px;
+        height: 100%;
     }
 }
+
+
 .contact{
     background-color: rgba(179, 161, 122, 0.883);
 }
