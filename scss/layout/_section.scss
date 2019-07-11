@@ -1,3 +1,4 @@
+@import "../libs/responsive";
 $color : #33658a;
 
 .pb-4, .py-4 {
@@ -23,19 +24,18 @@ $color : #33658a;
 }
 
 .presentation{
-    
+    background-color: #ffffff;
     height: auto;
 }
 .folio
 {
-    background-color: #9090a5;
+    background-color: #ffffff;
 }
-
+ 
 .skills{
     background-color: rgba(41, 41, 41, 0.8);
-    h2{
-        color: #fff;
-    }
+    
+    
     .container{
         padding-left: 5rem;
         .row{
@@ -130,3 +130,15 @@ $color : #33658a;
     color: $color;
 }
 
+
+@media #{$medium-md}{
+
+
+.skills{ 
+    background-color: #dddddd; 
+}
+.hobbies{
+    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #43434b);
+}
+
+}

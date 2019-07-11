@@ -7365,7 +7365,7 @@ header .icon {
 /*************************************************/
 @media screen and (max-width:898px) {
   header {
-    height: 80vh;
+    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #6a6a76);
   }
 
   .menu {
@@ -7556,18 +7556,16 @@ body {
 }
 
 .presentation {
+  background-color: #ffffff;
   height: auto;
 }
 
 .folio {
-  background-color: #9090a5;
+  background-color: #ffffff;
 }
 
 .skills {
   background-color: rgba(41, 41, 41, 0.8);
-}
-.skills h2 {
-  color: #fff;
 }
 .skills .container {
   padding-left: 5rem;
@@ -7649,6 +7647,15 @@ body {
   color: #33658a;
 }
 
+@media screen and (max-width:898px) {
+  .skills {
+    background-color: #dddddd;
+  }
+
+  .hobbies {
+    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #43434b);
+  }
+}
 footer {
   background-color: #000;
   height: 6rem;

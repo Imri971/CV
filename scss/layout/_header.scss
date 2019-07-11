@@ -239,7 +239,8 @@ header .icon {
 @media #{$medium-md}{
    
     header{
-        height: 80vh;
+           
+        background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #6a6a76);
         
     }
 
