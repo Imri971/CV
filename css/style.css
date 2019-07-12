@@ -7194,7 +7194,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 30vh;
+  height: 35vh;
   width: 100%;
 }
 
@@ -7425,6 +7425,11 @@ header .icon {
 }
 /*************************************************/
 @media screen and (max-width:898px) {
+  header {
+    height: 400px;
+    background-attachment: scroll;
+  }
+
   .menu {
     position: fixed;
     display: block;
@@ -7497,18 +7502,18 @@ header .icon {
   .logo img {
     width: 5rem;
     height: 6rem;
-    filter: contrast(129%) brightness(181%);
+    filter: contrast(111%) brightness(77%);
   }
 
   nav {
     width: auto;
     padding: 0 6%;
     height: auto;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/imac2.jpg);
+    background: linear-gradient(rgba(49, 49, 49, 0.6), rgba(0, 0, 0, 0.6)), url(../img/imac2.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 100% 500px;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     position: fixed;
     flex-direction: column;
     justify-content: center;
@@ -7560,14 +7565,9 @@ header .icon {
   }
 
   .parallax2, .parallax3, .parallax4, .parallax5 {
-    position: relative;
-    opacity: 0.75;
-    background-position: center;
-    background-size: 100% 700px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 30vh;
-    width: 100%;
+    background-size: 100% 350px;
+    background-attachment: scroll;
+    height: 25vh;
   }
 }
 @media only screen and (min-width:900px) {
@@ -7582,15 +7582,6 @@ header .icon {
 
   .header__bottom {
     display: block;
-  }
-}
-@media screen and (max-width:500px) {
-  header {
-    height: 100vh;
-  }
-
-  nav {
-    height: auto;
   }
 }
 html {
@@ -7630,6 +7621,11 @@ body {
 }
 .folio p {
   color: #222222;
+}
+.folio .container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 .skills {
