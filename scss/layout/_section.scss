@@ -26,24 +26,22 @@ $color : #33658a;
 .presentation{
     background-color: #ffffff;
     height: auto;
+
+    h2{
+        color: $color;
+    }
 }
 .folio
 {
-    background-color: $color;
-    color: #fff;
-    p {
-        color: rgb(34, 34, 34);
-    }
+    background-color: #dddddd;
+    color: $color;
     .container {
         margin: 0;
         padding: 0;
         max-width: 100%;
-       
-    
     }
 }
  
-
 .skills{
         background-color: #dddddd; 
     
@@ -88,7 +86,12 @@ $color : #33658a;
 
 .hobbies
 {
-background-color: #fff;
+    background: linear-gradient(rgba(23, 23, 26, 0.6), rgba(9, 9, 9, 0.6)), url(../img/wood.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
     .container {
         padding: 0 0;
     }
@@ -119,7 +122,18 @@ background-color: #fff;
     
  
 }
-
+.contact{
+    background-color: #dddddd;
+    .icon{
+        color: $color;
+        width: 40px;
+        height: 40px;
+    }
+    .title__bar--primary{
+ 
+        width: 4em;
+        left: 34%;}
+}
 
 .cross{
     font-size: 23px;
@@ -132,19 +146,44 @@ background-color: #fff;
 
 
 @media #{$medium-md}{
-    .parallax-window {
+    .parallax-window { 
         min-height: 400px;
         background: transparent;
     }
     
     .title__bar--primary {
-
+ 
         width: 4em;
         left: 46%;}
+
+    .hobbies{
+        background-attachment: scroll;
+        background-size: 100% 700px;
+    } 
+    .contact{
+        
+        .title__bar--primary{
+            left: 45.5%;}
+    }
+
 
 }
 
 @media #{$medium-up}{
     .title__bar--primary {
-        left: 48%;}
+        left: 47.5%;}
+}
+
+@media #{$small-width}{
+    .title__bar--primary {
+
+        width: 4em;
+        left: 41%;}
+
+    .contact{
+        .title__bar--primary{
+            left:40.5%
+        }
+    }    
+        
 }

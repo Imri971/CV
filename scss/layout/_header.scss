@@ -6,6 +6,7 @@ $font:  Poppins;
 
 //*************************************************
 
+
   .parallax2 {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/code.jpg);
 
@@ -13,31 +14,23 @@ $font:  Poppins;
 
 
   .parallax3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/apple3.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/imac.jpg);
+  
     
   }
-  .parallax4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/city.jpg);
-    
-  }
-  .parallax5{
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/apple.jpg);
-  }
-  .parallax2, .parallax3, .parallax4,.parallax5 {
+  
+ 
+.parallax2, .parallax3{
     position: relative;
     opacity: .75;
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 35vh;
+    height: 30vh;
     width: 100%;
-    
-   
-  }
 
+  }
   .title {
     position: absolute;
     top: 50%;
@@ -46,13 +39,16 @@ $font:  Poppins;
     color: #fff;
 }  
 
-.title__about {
+.title__about, .title__hobbies, .title__contact {
 
     left: 50%;
-   
     color: $color;
 
 }
+.title__hobbies{
+    color: #fff;
+}
+
 .title__bar{
      
     width: 4em;
@@ -395,7 +391,7 @@ header .icon {
     .logo img{
         width: 5rem;
         height: 6rem;
-        filter: contrast(111%) brightness(77%);
+        filter: contrast(112%) brightness(120%);
     }
  
     nav 
@@ -403,12 +399,9 @@ header .icon {
         width: auto;
         padding: 0 6%;
         height: auto; 
-        background:linear-gradient(rgba(49, 49, 49, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../img/imac2.jpg);
-        background-position: center;
-        background-size: 100% 500px;
-        background-repeat: no-repeat;
-        background-attachment: scroll;
+        background:#f3f3f3;
+        
+        color: rgb(31, 31, 31);
         position: fixed;
         flex-direction: column;
         justify-content: center;
@@ -443,7 +436,10 @@ header .icon {
             li{
                 display: block;
                 padding: 8px 1rem 3px;
-              
+              a{
+                  color: rgb(42, 42, 43);
+                  font-size: 17px;
+              }
             }
         }
     }
@@ -451,6 +447,13 @@ header .icon {
     .nav__container{
         margin: 0 0 0 0;
     }
+    .white
+{
+
+    
+     background-color: #f3f3f3;
+    
+}
 
     header .icon{
         display: block;
@@ -470,10 +473,10 @@ header .icon {
     
     }
 
-    .parallax2, .parallax3, .parallax4, .parallax5 {
+    .parallax2, .parallax3 {
         background-size: 100% 350px; 
         background-attachment: scroll;
-        height: 25vh;
+        height: 31vh;
 
     }
    

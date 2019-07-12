@@ -7176,25 +7176,17 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .parallax3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/imac.jpg);
 }
 
-.parallax4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/city.jpg);
-}
-
-.parallax5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple.jpg);
-}
-
-.parallax2, .parallax3, .parallax4, .parallax5 {
+.parallax2, .parallax3 {
   position: relative;
   opacity: 0.75;
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 35vh;
+  height: 30vh;
   width: 100%;
 }
 
@@ -7206,9 +7198,13 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
 }
 
-.title__about {
+.title__about, .title__hobbies, .title__contact {
   left: 50%;
   color: #33658a;
+}
+
+.title__hobbies {
+  color: #fff;
 }
 
 .title__bar {
@@ -7502,18 +7498,15 @@ header .icon {
   .logo img {
     width: 5rem;
     height: 6rem;
-    filter: contrast(111%) brightness(77%);
+    filter: contrast(112%) brightness(120%);
   }
 
   nav {
     width: auto;
     padding: 0 6%;
     height: auto;
-    background: linear-gradient(rgba(49, 49, 49, 0.6), rgba(0, 0, 0, 0.6)), url(../img/imac2.jpg);
-    background-position: center;
-    background-size: 100% 500px;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
+    background: #f3f3f3;
+    color: #1f1f1f;
     position: fixed;
     flex-direction: column;
     justify-content: center;
@@ -7545,9 +7538,17 @@ header .icon {
     display: block;
     padding: 8px 1rem 3px;
   }
+  nav ul li a {
+    color: #2a2a2b;
+    font-size: 17px;
+  }
 
   .nav__container {
     margin: 0 0 0 0;
+  }
+
+  .white {
+    background-color: #f3f3f3;
   }
 
   header .icon {
@@ -7564,10 +7565,10 @@ header .icon {
     font-size: 1.8rem;
   }
 
-  .parallax2, .parallax3, .parallax4, .parallax5 {
+  .parallax2, .parallax3 {
     background-size: 100% 350px;
     background-attachment: scroll;
-    height: 25vh;
+    height: 31vh;
   }
 }
 @media only screen and (min-width:900px) {
@@ -7614,13 +7615,13 @@ body {
   background-color: #ffffff;
   height: auto;
 }
+.presentation h2 {
+  color: #33658a;
+}
 
 .folio {
-  background-color: #33658a;
-  color: #fff;
-}
-.folio p {
-  color: #222222;
+  background-color: #dddddd;
+  color: #33658a;
 }
 .folio .container {
   margin: 0;
@@ -7664,7 +7665,11 @@ body {
 }
 
 .hobbies {
-  background-color: #fff;
+  background: linear-gradient(rgba(23, 23, 26, 0.6), rgba(9, 9, 9, 0.6)), url(../img/wood.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .hobbies .container {
   padding: 0 0;
@@ -7690,6 +7695,19 @@ body {
   padding: none;
 }
 
+.contact {
+  background-color: #dddddd;
+}
+.contact .icon {
+  color: #33658a;
+  width: 40px;
+  height: 40px;
+}
+.contact .title__bar--primary {
+  width: 4em;
+  left: 34%;
+}
+
 .cross {
   font-size: 23px;
   position: absolute;
@@ -7709,10 +7727,29 @@ body {
     width: 4em;
     left: 46%;
   }
+
+  .hobbies {
+    background-attachment: scroll;
+    background-size: 100% 700px;
+  }
+
+  .contact .title__bar--primary {
+    left: 45.5%;
+  }
 }
 @media only screen and (min-width:900px) {
   .title__bar--primary {
-    left: 48%;
+    left: 47.5%;
+  }
+}
+@media screen and (max-width:500px) {
+  .title__bar--primary {
+    width: 4em;
+    left: 41%;
+  }
+
+  .contact .title__bar--primary {
+    left: 40.5%;
   }
 }
 footer {
