@@ -29,9 +29,14 @@ $color : #33658a;
 }
 .folio
 {
-    background-color: #9090a5;
+    background-color: $color;
+    color: #fff;
+    p {
+        color: rgb(34, 34, 34);
+    }
 }
  
+
 .skills{
         background-color: #dddddd; 
     
@@ -74,53 +79,40 @@ $color : #33658a;
 }
 
 
-.contact{
-    background-color: rgba(179, 161, 122, 0.883);
-}
 .hobbies
 {
-   
-    background-color: rgba(0, 0, 0, 0.7);
-    height:auto;
-    color: rgb(255, 255, 255);
-    .card{
-        h1 {
-            font-size: 1.6rem;
-        }
+background-color: #fff;
+    .container {
+        padding: 0 0;
+    }
+    .col-12{
+        padding: 0 0;
     }
 
-    .card-body
-    { 
-        width:18rem;
-        h3{
-            color: $color;
-        }
+    .card {
+        width: auto;
     }
-
-    .fas{
-        border: 2px solid $color;
+    .icon{
+        font-size: 3rem;
         color: $color;
-        border-radius: 100%;
+        
         padding:7px;
-        &:last-child{
-            border:none;
-            border-radius: none;
-            padding: none;
-        }
+
+    }
+    img {
+        width: 90px;
+        height: 70px;
+    }
+    .fas{
+        border:none;
+        border-radius: none;
+        padding: none;  
     }
     
-
+    
+ 
 }
 
-.title__bar{
-     
-    width: 4em;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    height: 4px;
-    background: $color;
-}
 
 .cross{
     font-size: 23px;
@@ -137,10 +129,15 @@ $color : #33658a;
         min-height: 400px;
         background: transparent;
     }
+    
+    .title__bar--primary {
 
-.hobbies{
+        width: 4em;
+        left: 46%;}
 
-    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #43434b);
 }
 
+@media #{$medium-up}{
+    .title__bar--primary {
+        left: 48%;}
 }

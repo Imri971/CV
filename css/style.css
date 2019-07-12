@@ -7171,13 +7171,76 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /************************** My own styles *********************/
+.parallax2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/code.jpg);
+}
+
+.parallax3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple3.jpg);
+}
+
+.parallax4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/city.jpg);
+}
+
+.parallax5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple.jpg);
+}
+
+.parallax2, .parallax3, .parallax4, .parallax5 {
+  position: relative;
+  opacity: 0.75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 30vh;
+  width: 100%;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.title__about {
+  left: 50%;
+  color: #33658a;
+}
+
+.title__bar {
+  width: 4em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  background: #33658a;
+}
+
+.title__bar--primary {
+  width: 4em;
+  left: 42%;
+  height: 4px;
+  position: relative;
+  background: #33658a;
+}
+
 header {
   width: 100%;
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: rgba(41, 41, 41, 0.8);
   font-family: Poppins;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
 }
 
 .menu {
@@ -7194,7 +7257,7 @@ nav {
   line-height: 4rem;
   background-color: transparent;
   position: fixed;
-  z-index: 900;
+  z-index: 990;
   transition: 1s ease-in;
 }
 
@@ -7364,15 +7427,6 @@ header .icon {
 }
 /*************************************************/
 @media screen and (max-width:898px) {
-  .parallax-window {
-    min-height: 400px;
-    background: transparent;
-  }
-
-  header {
-    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #6a6a76);
-  }
-
   .menu {
     position: fixed;
     display: block;
@@ -7445,29 +7499,28 @@ header .icon {
   .logo img {
     width: 5rem;
     height: 6rem;
-    filter: contrast(103%) brightness(158%);
+    filter: contrast(129%) brightness(181%);
   }
 
   nav {
     width: auto;
     padding: 0 6%;
     height: auto;
-    background-color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/imac2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: translateX(-50rem);
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
-    background: #fff;
     z-index: 998;
     line-height: 1;
     font-size: 2rem;
     transition: transform 0.4s cubic-bezier(0.56, 0.1, 0.34, 0.91);
-  }
-
-  .white {
-    background: #fff;
   }
 
   .menu-open nav {
@@ -7488,9 +7541,6 @@ header .icon {
   nav ul li {
     display: block;
     padding: 8px 1rem 3px;
-  }
-  nav ul li a {
-    color: #000;
   }
 
   .nav__container {
@@ -7566,7 +7616,11 @@ body {
 }
 
 .folio {
-  background-color: #9090a5;
+  background-color: #33658a;
+  color: #fff;
+}
+.folio p {
+  color: #222222;
 }
 
 .skills {
@@ -7604,43 +7658,31 @@ body {
   height: 100%;
 }
 
-.contact {
-  background-color: rgba(179, 161, 122, 0.883);
-}
-
 .hobbies {
-  background-color: rgba(0, 0, 0, 0.7);
-  height: auto;
-  color: white;
+  background-color: #fff;
 }
-.hobbies .card h1 {
-  font-size: 1.6rem;
+.hobbies .container {
+  padding: 0 0;
 }
-.hobbies .card-body {
-  width: 18rem;
+.hobbies .col-12 {
+  padding: 0 0;
 }
-.hobbies .card-body h3 {
+.hobbies .card {
+  width: auto;
+}
+.hobbies .icon {
+  font-size: 3rem;
   color: #33658a;
-}
-.hobbies .fas {
-  border: 2px solid #33658a;
-  color: #33658a;
-  border-radius: 100%;
   padding: 7px;
 }
-.hobbies .fas:last-child {
+.hobbies img {
+  width: 90px;
+  height: 70px;
+}
+.hobbies .fas {
   border: none;
   border-radius: none;
   padding: none;
-}
-
-.title__bar {
-  width: 4em;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  height: 4px;
-  background: #33658a;
 }
 
 .cross {
@@ -7653,8 +7695,19 @@ body {
 }
 
 @media screen and (max-width:898px) {
-  .hobbies {
-    background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #43434b);
+  .parallax-window {
+    min-height: 400px;
+    background: transparent;
+  }
+
+  .title__bar--primary {
+    width: 4em;
+    left: 46%;
+  }
+}
+@media only screen and (min-width:900px) {
+  .title__bar--primary {
+    left: 48%;
   }
 }
 footer {

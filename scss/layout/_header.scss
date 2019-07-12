@@ -4,14 +4,92 @@
 $color : #33658a;
 $font:  Poppins;
 
+//*************************************************
+
+  .parallax2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/code.jpg);
+
+  }
+
+
+  .parallax3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/apple3.jpg);
+    
+  }
+  .parallax4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/city.jpg);
+    
+  }
+  .parallax5{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/apple.jpg);
+  }
+  .parallax2, .parallax3, .parallax4,.parallax5 {
+    position: relative;
+    opacity: .75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 30vh;
+    width: 100%;
+    
+   
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}  
+
+.title__about {
+
+    left: 50%;
+   
+    color: $color;
+
+}
+.title__bar{
+     
+    width: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 4px;
+    background: $color;
+}
+
+.title__bar--primary {
+
+    width: 4em;
+    left: 42%;
+    height: 4px;
+    position: relative;
+    background: $color;
+
+}
+
+//**************************************************
 //Header 
 header{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: rgba(41, 41, 41, 0.8);
+    
     font-family: $font;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/apple.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
 }
 
 
@@ -31,7 +109,7 @@ nav {
    
     background-color: transparent;
     position: fixed;
-    z-index: 900;
+    z-index: 990;
     transition:  1s ease-in;
    
 }
@@ -239,15 +317,8 @@ header .icon {
 /*************************************************/        
 @media #{$medium-md}{
    
-    .parallax-window {
-        min-height: 400px;
-        background: transparent;
-    }
-    header{
-           
-        background-image: linear-gradient(to top, #1b1b1b, #2d2d30, #414046, #55555d, #6a6a76);
-        
-    }
+   
+    
 
     .menu{
         position: fixed;
@@ -323,7 +394,7 @@ header .icon {
     .logo img{
         width: 5rem;
         height: 6rem;
-        filter: contrast(103%) brightness(158%);
+        filter: contrast(129%) brightness(181%);
     }
  
     nav 
@@ -331,22 +402,24 @@ header .icon {
         width: auto;
         padding: 0 6%;
         height: auto; 
-        background-color: #fff;
+        background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/imac2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         position: fixed;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         transform: translateX(-50rem);
         box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
-        background: #fff;
         z-index: 998;
         line-height:1;
         font-size: 2rem;
         transition: transform 0.4s cubic-bezier(0.56, 0.1, 0.34, 0.91); 
     }
-    .white{
-        background: #fff;
-    }
+    
     .menu-open nav 
     {
         transform: translateX(0);
@@ -369,9 +442,7 @@ header .icon {
             li{
                 display: block;
                 padding: 8px 1rem 3px;
-                a{
-                    color: #000;
-                }
+              
             }
         }
     }
