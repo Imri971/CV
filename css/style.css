@@ -7818,15 +7818,11 @@ footer {
   opacity: 0;
 }
 
-.balourd {
-  margin-top: 3rem;
-}
-
 .imri {
+  margin: auto;
   position: relative;
   width: 297px;
   height: 456px;
-  left: 38.5%;
   overflow: hidden;
   /*Contenu caché sans barre de défilement*/
   transform: scale(0.8);
@@ -7881,7 +7877,7 @@ footer {
 .imri span:nth-child(1) {
   background: #e5eaee;
   left: 100px;
-  top: -174px;
+  top: -144px;
   z-index: 1;
   transform: rotate(90deg);
 }
@@ -7911,8 +7907,30 @@ footer {
   text-transform: uppercase;
   letter-spacing: 18px;
   margin-top: -30px;
+  top: -20px;
 }
 
+@media screen and (max-width:898px) {
+  .imri {
+    top: 200px;
+  }
+
+  .title__imri {
+    top: 190px;
+    left: 9px;
+  }
+}
+@media screen and (max-width:500px) {
+  .imri {
+    left: 0;
+    top: 90px;
+  }
+
+  .title__imri {
+    left: 9px;
+    top: 80px;
+  }
+}
 .animated {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;

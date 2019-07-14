@@ -1,3 +1,4 @@
+@import "../libs/responsive";
 $color :#33658a;
 .preloader{
     position: fixed;
@@ -8,6 +9,7 @@ $color :#33658a;
     background: none; 
     transition: 1s ease-in;
     z-index: 1000;
+    
 }
 
 .preloader::before{
@@ -22,7 +24,7 @@ $color :#33658a;
 } 
 
 .preloader.complete{
-    //opacity: 0;
+    
     visibility: hidden;
     pointer-events: none;
     transition: 2.5s;
@@ -32,17 +34,14 @@ $color :#33658a;
     opacity: 0;
 }
 
-.balourd{
-    margin-top: 3rem;
-}
+
 
 .imri
 {
-    
+    margin: auto;
     position: relative;
     width:  297px;
     height: 456px;
-    left: 38.5%;
     overflow: hidden; /*Contenu caché sans barre de défilement*/
     transform: scale(0.8);
 }
@@ -108,7 +107,7 @@ $color :#33658a;
 {
     background: #e5eaee;
     left: 100px;
-    top: -174px;
+    top: -144px;
     z-index: 1;
     transform: rotate(90deg);
     
@@ -143,4 +142,26 @@ $color :#33658a;
     text-transform: uppercase;
     letter-spacing: 18px;
     margin-top: -30px;
+    top: -20px;
+}
+
+@media #{$medium-md}
+{
+    .imri{
+        top: 200px;
+    }
+    .title__imri{
+        top: 190px;
+        left: 9px;
+    }
+}
+@media #{$small-width}{
+    .imri{ 
+        left: 0;
+        top: 90px;
+    }
+    .title__imri{
+        left: 9px;
+        top: 80px;
+    }
 }
