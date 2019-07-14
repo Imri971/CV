@@ -7919,12 +7919,12 @@ footer {
 @media screen and (max-width:500px) {
   .imri {
     left: 0;
-    top: 70px;
+    top: 20px;
   }
 
   .title__imri {
     left: 9px;
-    top: 50px;
+    top: 20px;
   }
 }
 .animated {
