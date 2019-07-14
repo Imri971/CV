@@ -35,7 +35,9 @@ $color :#33658a;
 }
 
 
-
+.balourd{
+    animation: apparition 3s ease-in;
+}
 .imri
 {
     margin: auto;
@@ -44,6 +46,15 @@ $color :#33658a;
     height: 456px;
     overflow: hidden; /*Contenu caché sans barre de défilement*/
     transform: scale(0.8);
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .imri:before
@@ -62,20 +73,6 @@ $color :#33658a;
 }
 
 
-.imri:after,
- .title__imri:after
-{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0; /*Après les 400%, on change left en right*/
-    width:400%;/*On passe à 400% après avoir réglé l'index à 3*/
-    height: 100%;
-    background: linear-gradient(to right, transparent, $color, $color);/*vers la droite: transparent*/
-    z-index: 3;
-
-    animation: balourd 3s linear ;
-}
 
 @keyframes balourd{
  
@@ -127,6 +124,7 @@ $color :#33658a;
     top: 200px;
     z-index: 1;
     transform: rotate(90deg);
+
 }
 
 .title__imri
@@ -157,10 +155,10 @@ $color :#33658a;
 @media #{$small-width}{
     .imri{ 
         left: 0;
-        top: 90px;
+        top: 70px;
     }
     .title__imri{
         left: 9px;
-        top: 80px;
+        top: 50px;
     }
 }

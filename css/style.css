@@ -7329,7 +7329,7 @@ header .icon {
 }
 
 .banner__title {
-  font-size: 4.5rem;
+  font-size: 4rem;
   animation-duration: 2s !important;
   font-weight: 700;
   letter-spacing: 6px;
@@ -7818,6 +7818,10 @@ footer {
   opacity: 0;
 }
 
+.balourd {
+  animation: apparition 3s ease-in;
+}
+
 .imri {
   margin: auto;
   position: relative;
@@ -7828,6 +7832,14 @@ footer {
   transform: scale(0.8);
 }
 
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .imri:before {
   content: "";
   position: absolute;
@@ -7840,22 +7852,6 @@ footer {
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   transform: scaleX(1.5);
-}
-
-.imri:after,
-.title__imri:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  /*Après les 400%, on change left en right*/
-  width: 400%;
-  /*On passe à 400% après avoir réglé l'index à 3*/
-  height: 100%;
-  background: linear-gradient(to right, transparent, #33658a, #33658a);
-  /*vers la droite: transparent*/
-  z-index: 3;
-  animation: balourd 3s linear;
 }
 
 @keyframes balourd {
@@ -7875,7 +7871,7 @@ footer {
 
 /*************************************************/
 .imri span:nth-child(1) {
-  background: #ffffff;
+  background: #e5eaee;
   left: 100px;
   top: -144px;
   z-index: 1;
@@ -7883,16 +7879,16 @@ footer {
 }
 
 .imri span:nth-child(2) {
-  background: #ffffff;
+  background: #fbfdff;
   left: 32%;
   width: 40%;
 }
 
 .imri span:nth-child(3) {
-  background: #ffffff;
+  background: #f3f4f5;
   left: 100px;
   top: 200px;
-  z-index: 1; 
+  z-index: 1;
   transform: rotate(90deg);
 }
 
@@ -7923,12 +7919,12 @@ footer {
 @media screen and (max-width:500px) {
   .imri {
     left: 0;
-    top: 90px;
+    top: 70px;
   }
 
   .title__imri {
     left: 9px;
-    top: 80px;
+    top: 50px;
   }
 }
 .animated {
