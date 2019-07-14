@@ -7875,7 +7875,7 @@ footer {
 
 /*************************************************/
 .imri span:nth-child(1) {
-  background: #e5eaee;
+  background: #ffffff;
   left: 100px;
   top: -144px;
   z-index: 1;
@@ -7883,16 +7883,16 @@ footer {
 }
 
 .imri span:nth-child(2) {
-  background: #fbfdff;
+  background: #ffffff;
   left: 32%;
   width: 40%;
 }
 
 .imri span:nth-child(3) {
-  background: #f3f4f5;
+  background: #ffffff;
   left: 100px;
   top: 200px;
-  z-index: 1;
+  z-index: 1; 
   transform: rotate(90deg);
 }
 
