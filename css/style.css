@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -7171,6 +7172,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /************************** My own styles *********************/
+@font-face {
+  font-family: "Lancelot";
+  src: url("Lancelot-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lancelot";
+  src: url("Lancelot-Regular.ttf");
+  font-weight: normal;
+}
 .parallax2 {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/code.jpg);
 }
@@ -7228,7 +7239,7 @@ a.text-dark:hover, a.text-dark:focus {
 header {
   position: relative;
   overflow: hidden;
-  font-family: Poppins;
+  font-family: "Lancelot";
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple.jpg);
   background-position: center;
   background-size: cover;
@@ -7318,8 +7329,10 @@ header .icon {
 }
 
 .banner__title {
-  font-size: 4.8rem;
+  font-size: 4.5rem;
   animation-duration: 2s !important;
+  font-weight: 700;
+  letter-spacing: 6px;
 }
 
 .banner__text {
@@ -7805,65 +7818,101 @@ footer {
   opacity: 0;
 }
 
-/**************** Loader CSS **********************/
-.loader {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 5em;
-  height: 5em;
-  box-sizing: border-box;
-  border: 3px solid white;
-  animation: anime 2s linear infinite;
-  z-index: 1001;
+.balourd {
+  margin-top: 3rem;
 }
 
-.loader:before {
+.imri {
+  position: relative;
+  width: 297px;
+  height: 456px;
+  left: 38.5%;
+  overflow: hidden;
+  /*Contenu caché sans barre de défilement*/
+  transform: scale(0.8);
+}
+
+.imri:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -85px;
+  width: 100%;
+  height: 120px;
+  background: #33658a;
+  z-index: 2;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  transform: scaleX(1.5);
+}
+
+.imri:after,
+.title__imri:after {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
-  bottom: 0;
-  background: #f1f0f0;
-  animation: animeBg 2s linear infinite;
+  /*Après les 400%, on change left en right*/
+  width: 400%;
+  /*On passe à 400% après avoir réglé l'index à 3*/
+  height: 100%;
+  background: linear-gradient(to right, transparent, #33658a, #33658a);
+  /*vers la droite: transparent*/
+  z-index: 3;
+  animation: balourd 3s linear;
 }
 
-@keyframes anime {
+@keyframes balourd {
   0% {
-    transform: translate(-50%, -50%) rotate(0deg);
-  }
-  25% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  75% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    right: 0;
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    right: -400%;
   }
 }
-@keyframes animeBg {
-  0% {
-    height: 0;
-  }
-  25% {
-    height: 0;
-  }
-  50% {
-    height: 100%;
-  }
-  75% {
-    height: 100%;
-  }
-  100% {
-    height: 0;
-  }
+.imri span {
+  position: absolute;
+  top: 0;
+  width: 8em;
+  height: 90%;
 }
+
+/*************************************************/
+.imri span:nth-child(1) {
+  background: #e5eaee;
+  left: 100px;
+  top: -174px;
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+.imri span:nth-child(2) {
+  background: #fbfdff;
+  left: 32%;
+  width: 40%;
+}
+
+.imri span:nth-child(3) {
+  background: #f3f4f5;
+  left: 100px;
+  top: 200px;
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+.title__imri {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: arial;
+  color: #f0f8ff;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  margin-top: -30px;
+}
+
 .animated {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;

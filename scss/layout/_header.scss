@@ -1,8 +1,9 @@
 
 @import "../libs/responsive";
 @import "../libs/mixins";
+@import "../layout/font";
 $color : #33658a;
-$font:  Poppins;
+$font:  Poppins; 
 
 //*************************************************
 
@@ -75,8 +76,7 @@ $font:  Poppins;
 header{
     position: relative;
     overflow:hidden;
-    
-    font-family: $font;
+    font-family: 'Lancelot';
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/apple.jpg);
     background-position: center;
@@ -127,8 +127,7 @@ nav {
 {
     float: left;
     margin-top: 0;
-     margin-left: 1rem;
-   
+     margin-left: 1rem; 
      
 }
 
@@ -194,9 +193,10 @@ header .icon {
 }
 
 .banner__title{
-    font-size: 4.8rem;
+    font-size: 4.5rem;
     animation-duration: 2s !important;
-
+    font-weight: 700;
+    letter-spacing: 6px;
 }
 
 .banner__text{
