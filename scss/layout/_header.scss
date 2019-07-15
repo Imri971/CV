@@ -76,7 +76,7 @@ $font:  Poppins;
 header{
     position: relative;
     overflow:hidden;
-    font-family: 'Lancelot';
+  
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/apple.jpg);
     background-position: center;
@@ -190,13 +190,13 @@ header .icon {
     padding-left: 10px;
     text-align: center;
     color: white;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
 .banner__title{
     font-size: 4rem;
     animation-duration: 2s !important;
-    font-weight: 700;
+    font-weight: 700; 
     letter-spacing: 6px;
 }
 

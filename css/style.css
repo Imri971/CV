@@ -7239,7 +7239,6 @@ a.text-dark:hover, a.text-dark:focus {
 header {
   position: relative;
   overflow: hidden;
-  font-family: "Lancelot";
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/apple.jpg);
   background-position: center;
   background-size: cover;
@@ -7326,7 +7325,7 @@ header .icon {
   padding-left: 10px;
   text-align: center;
   color: white;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 
 .banner__title {
