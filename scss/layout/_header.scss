@@ -190,6 +190,7 @@ header .icon {
     padding-left: 10px;
     text-align: center;
     color: white;
+    font-family: cursive;
 }
 
 .banner__title{
@@ -225,7 +226,6 @@ header .icon {
     
     display: block;
     padding: 14px 18px;
-    font-family: Poppins;
     font-weight: 700; 
     letter-spacing: 6px;
     color: #fff;
@@ -399,7 +399,7 @@ header .icon {
         width: auto;
         padding: 0 6%;
         height: auto; 
-        background:#f3f3f3;
+        background:#fff;
         
         color: rgb(31, 31, 31);
         position: fixed;
@@ -451,7 +451,7 @@ header .icon {
 {
 
     
-     background-color: #f3f3f3;
+     background-color: #fff;
     
 }
 
@@ -494,6 +494,9 @@ header .icon {
     }
     .header__bottom{
         display: block;
+    }
+    .logo img{
+        filter: contrast(85%) brightness(36%) grayscale(15%); 
     }
 }
  

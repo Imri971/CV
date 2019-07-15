@@ -30,8 +30,13 @@ $color : #33658a;
     h2{
         color: $color;
     }
+    img{
+        width: 25em;
+        height: 30em;
+        filter: contrast(112%) brightness(120%);
+    }
 }
-.folio
+.folio 
 {
     background-color: #dddddd;
     color: $color;
@@ -156,6 +161,13 @@ $color : #33658a;
         width: 4em;
         left: 46%;}
 
+        .presentation{
+            img{
+                width: 23em;
+
+            }
+        }    
+
     .hobbies{
         background-attachment: scroll;
         background-size: 100% 700px;
@@ -179,6 +191,13 @@ $color : #33658a;
 
         width: 4em;
         left: 41%;}
+
+        .presentation{ 
+            img{
+                width: 20em;
+
+            }
+        }      
 
     .contact{
         .title__bar--primary{

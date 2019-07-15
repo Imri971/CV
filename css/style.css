@@ -7326,6 +7326,7 @@ header .icon {
   padding-left: 10px;
   text-align: center;
   color: white;
+  font-family: cursive;
 }
 
 .banner__title {
@@ -7358,7 +7359,6 @@ header .icon {
 .banner__btn {
   display: block;
   padding: 14px 18px;
-  font-family: Poppins;
   font-weight: 700;
   letter-spacing: 6px;
   color: #fff;
@@ -7518,7 +7518,7 @@ header .icon {
     width: auto;
     padding: 0 6%;
     height: auto;
-    background: #f3f3f3;
+    background: #fff;
     color: #1f1f1f;
     position: fixed;
     flex-direction: column;
@@ -7561,7 +7561,7 @@ header .icon {
   }
 
   .white {
-    background-color: #f3f3f3;
+    background-color: #fff;
   }
 
   header .icon {
@@ -7597,6 +7597,10 @@ header .icon {
   .header__bottom {
     display: block;
   }
+
+  .logo img {
+    filter: contrast(85%) brightness(36%) grayscale(15%);
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -7630,6 +7634,11 @@ body {
 }
 .presentation h2 {
   color: #33658a;
+}
+.presentation img {
+  width: 25em;
+  height: 30em;
+  filter: contrast(112%) brightness(120%);
 }
 
 .folio {
@@ -7741,6 +7750,10 @@ body {
     left: 46%;
   }
 
+  .presentation img {
+    width: 23em;
+  }
+
   .hobbies {
     background-attachment: scroll;
     background-size: 100% 700px;
@@ -7759,6 +7772,10 @@ body {
   .title__bar--primary {
     width: 4em;
     left: 41%;
+  }
+
+  .presentation img {
+    width: 20em;
   }
 
   .contact .title__bar--primary {
