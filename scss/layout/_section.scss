@@ -31,9 +31,13 @@ $color : #33658a;
         color: $color;
     }
     img{
-        width: 25em;
-        height: 30em;
+        width: 9em;
+        height: 9em;
         filter: contrast(112%) brightness(120%);
+        border-radius: 100%;
+    }
+    .presentation__text{
+        padding:0px 8rem 1rem;
     }
 }
 .folio 
@@ -47,10 +51,8 @@ $color : #33658a;
     }
 }
  
-.skills{
+.skills{ 
         background-color: #dddddd; 
-    
-    
     
     .container{
         padding-left: 5rem;
@@ -162,8 +164,8 @@ $color : #33658a;
         left: 46%;}
 
         .presentation{
-            img{
-                width: 23em;
+            .presentation__text{
+               padding: 0 2rem 1rem;
 
             }
         }    
@@ -190,14 +192,7 @@ $color : #33658a;
     .title__bar--primary {
 
         width: 4em;
-        left: 41%;}
-
-        .presentation{ 
-            img{
-                width: 20em;
-
-            }
-        }      
+        left: 41%;}    
 
     .contact{
         .title__bar--primary{
