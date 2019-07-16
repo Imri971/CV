@@ -23,18 +23,24 @@ $color : #33658a;
     overflow: hidden;
 }
 
-.presentation{
+.presentation{ 
     background-color: #ffffff;
     height: auto;
 
     h2{
         color: $color;
-    }
+    } 
     img{
+        margin-top: -70px;
         width: 9em;
         height: 9em;
         filter: contrast(112%) brightness(120%);
         border-radius: 100%;
+    } 
+    .presentation__block{
+        background: #f2f2f2;
+        margin-top: 3em;
+        box-shadow: 11px 9px 12px rgba(102, 103, 105, 0.4);
     }
     .presentation__text{
         padding:0px 8rem 1rem;
