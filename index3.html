@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet"> 
+    <title>timeline</title>
+    <style>
+       body{
+           margin: 0;
+           padding: 0;
+           font-family: 'Roboto Mono', monospace;
+            font-size: 13px;
+           height: 100%; 
+       }
+       .timeline{
+           position: relative;
+           margin: 50px auto;
+           padding: 40px 0;
+           width: 1000px;
+           box-sizing: border-box;
+       }
+       .timeline::before
+       {
+           content: "";
+           position: absolute;
+           left: 50%;
+           width: 2px;
+           height: 100%;
+           background-color: rgb(68, 67, 67);
+           
+
+       }
+       .timeline ul{
+           margin: 0;
+           padding: 0;
+       }
+       .timeline ul li{
+           line-height: normal;
+           position: relative;
+           width: 50%;
+           padding: 20px 40px;
+           list-style: none;
+           box-sizing: border-box;
+
+       }
+       .timeline ul li:nth-child(odd)
+       {
+           float: left;
+           text-align: right;
+           clear: both;
+       }
+       .timeline ul li:nth-child(even)
+       {
+           float: right;
+           text-align: left;
+           clear: both;
+       }
+       .content{
+           padding-bottom: 20px;
+       }
+       .timeline ul li:nth-child(odd)::before{
+           content: '';
+           position: absolute;
+           top: 25px;
+           right: -6px;
+           width: 10px;
+           height: 10px;
+           background: rgb(55, 82, 168);
+           border-radius: 50%;
+           box-shadow: 0 0 0 3px rgba(55, 82, 168, 0.2);
+       }
+       .timeline ul li:nth-child(even)::before{
+           content: '';
+           position: absolute;
+           top: 25px;
+           left: -4px;
+           width: 10px;
+           height: 10px;
+           background: rgb(55, 82, 168);
+           border-radius: 50%;
+           box-shadow: 0 0 0 3px rgba(55, 82, 168, 0.2);
+       }
+       .timeline ul li h3{
+           margin: 0;
+           padding: 0;
+           font-weight: 600;
+           color: rgb(55, 82, 168);
+       }
+       .timeline ul li p{
+           margin: 10px 0 0;
+           padding: 0;
+       }
+       .timeline ul li .time h4{
+           margin: 0;
+           padding: 0;
+           font-size: 14px;
+       }
+       .timeline ul li:nth-child(odd) .time{
+           position: absolute;
+           top:12px;
+           right: -165px;
+           margin:0;
+           padding: 8px 16px;
+           background: rgba(55, 82, 168,1);
+           color: #fff;
+           border-radius: 15px;
+           box-shadow: 0 0 0 3px rgba(55, 82, 168, 0.2);
+       }
+
+       .timeline ul li:nth-child(even) .time{
+           position: absolute;
+           top:12px;
+           left: -253px;
+           margin:0;
+           padding: 8px 16px;
+           background: rgba(55, 82, 168,1);
+           color: #fff;
+           border-radius: 15px;
+           box-shadow: 0 0 0 3px rgba(55, 82, 168, 0.2);
+       }
+
+       @media (max-width: 1000px){
+           .timeline{
+               width: 100%;
+           }
+       }
+       @media (max-width: 767px){
+           .timeline{
+               width: 100%;
+           }
+           .timeline:before{
+               left: 20px;
+           }
+           .timeline ul li:nth-child(odd),
+           .timeline ul li:nth-child(even){
+                width: 100%;
+                text-align: left;
+                padding-left: 50px;
+                padding-bottom: 50px;
+           }
+           .timeline ul li:nth-child(odd):before,
+           .timeline ul li:nth-child(even):before
+            {
+               top: -18px;
+               left: 16px;
+           }
+          
+           .timeline ul li:nth-child(2n+1) .time,
+           .timeline ul li:nth-child(2n) .time{
+               top: -30px;
+               left: 50px;
+               right: inherit;
+           }
+       }
+    </style>
+</head>
+<body>
+    
+    <div class="timeline">
+        <ul>
+            <li>
+                <div class="content">
+                    <h3>Conseiller en vente</h3>
+                    <p>Gestion de dossiers, utilisation de logiciels informatiques pour les clients professionnels d’Orange. Marketing.</p>
+                </div>
+                <div class="time">
+                    <h4> avril - juin 2019</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Hôtelier</h3>
+                    <p>Préparation des commandes, des repas en fonction des régimes particuliers, plonge et services à table. Travail estudiantin durant les vacances scolaires.</p>
+                </div>
+                <div class="time">
+                    <h4>Juillet - septembre 2018</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Militaire de réserve</h3>
+                    <p>Depuis avril 2018, je me suis engagé en tant que militaire de réserve au sein de l'armée de Terre en tant que soldat. Je me suis engagé car je souhaitais protéger et aider mes semblables.</p>
+                </div>
+                <div class="time">
+                    <h4>Avril 2018</h4>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Animateur en hôpital gériatrique</h3>
+                    <p>J'ai effectué un service civique en tant qu'animateur dans 3 hôpitaux gériatrique. J'ai organisé plusieurs séances d'animation pour les patients et leur famille.</p>
+                </div>
+                <div class="time">
+                    <h4>Juillet - Septembre 2017</h4>
+                </div>
+                </li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+</body>
+</html>

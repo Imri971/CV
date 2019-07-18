@@ -9,19 +9,21 @@ $font:  Poppins;
 
 
   .parallax2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/code.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url(../img/code.jpg);
 
   }
 
-
   .parallax3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../img/imac.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url(../img/imac.jpg);
   
-    
+  }
+  .parallax4{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url(../img/apple3.jpg);
+  
   }
   
  
-.parallax2, .parallax3{
+.parallax2, .parallax3, .parallax4{
     position: relative;
     opacity: .75;
     background-position: center;
@@ -471,7 +473,7 @@ header .icon {
     
     }
 
-    .parallax2, .parallax3 {
+    .parallax2, .parallax3, .parallax4 {
         background-size: 100% 350px; 
         background-attachment: scroll;
         height: 31vh;

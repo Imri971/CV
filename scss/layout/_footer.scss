@@ -1,4 +1,25 @@
+$color : #33658a;
 footer{
     background-color: #000;
-    height: 6rem;
+    height: auto;
+
+    img{
+        width: 2rem;
+        height: 2rem;
+    } 
+    
+    .copyright{
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: auto;
+    }
+    .copyright-detail {
+        color: rgb(93, 94, 97);
+        a{ 
+            color:$color;
+        }
+    }
+   
 }
