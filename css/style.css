@@ -7859,6 +7859,103 @@ body {
   padding: 0;
   max-width: 100%;
 }
+.folio .item-thumbnail {
+  overflow: hidden;
+  box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
+  position: relative;
+  height: 400px;
+}
+.folio .item-thumbnail img {
+  transition: all 1s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+.folio .item-thumbnail:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.5);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.folio .item-thumbnail.readmore .overthumb {
+  background: #000;
+  height: 100%;
+}
+.folio .item-thumbnail .overthumb {
+  display: block;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  top: auto;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.8s ease-out;
+  width: 100%;
+}
+.folio .item-thumbnail:hover .overthumb {
+  opacity: 0.8;
+  top: 0;
+}
+.folio .item-thumbnail .icons {
+  display: block;
+  font-size: 19px;
+  height: auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  transition: all 0.4s ease-out;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  width: 100%;
+}
+.folio .item-thumbnail:hover .icons {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  top: 45%;
+}
+.folio .item-thumbnail.readmore .icons {
+  border-bottom: 1px solid #fff;
+}
+.folio .item-thumbnail .icons a {
+  border-radius: 3px;
+  font-size: 0.875em;
+  outline: 0;
+  margin-right: 5px;
+  padding: 10px;
+}
+.folio .item-thumbnail.readmore .icons a {
+  font-size: 19px;
+  background: none;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.folio .item-thumbnail.readmore .icons a:hover {
+  color: #33658a;
+}
+.folio .class-item h3 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  border-bottom: 8px solid #33658a;
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 0;
+}
+.folio .class-item h3 a {
+  color: #3b3b3b;
+  transition: all 0.3s ease;
+  line-height: 50px;
+  text-decoration: none;
+}
+.folio .class-item h3 a:hover {
+  color: #33658a;
+}
 
 .experience {
   background-color: #dddddd;
@@ -8040,7 +8137,7 @@ body {
   text-decoration: none;
 }
 .contact .contact__detail a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .cross {
