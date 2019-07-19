@@ -8205,9 +8205,9 @@ footer .copyright-detail a {
   transition: color 0.8s ease-in;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:898px) {
   #topBtn {
-    right: 4px;
+    right: 3px;
     bottom: 0;
   }
 }

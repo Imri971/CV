@@ -18,9 +18,9 @@ $color : #33658a;
     color: lighten($color, 50%);
     transition: color 0.8s ease-in;
 }
-@media #{$small-width}{
-#topBtn { 
-    right: 4px;
+@media #{$medium-md}{
+    #topBtn { 
+    right: 3px;
     bottom: 0;
 }
 }
