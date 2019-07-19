@@ -8146,14 +8146,6 @@ body {
     height: 88%;
   }
 
-  .contact .title__bar--primary {
-    left: 40.5%;
-  }
-  .contact .block {
-    border-radius: 5px;
-    box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
-  }
-
   .skills .fab {
     font-size: 7rem;
   }
@@ -8164,6 +8156,14 @@ body {
   }
   .skills .skills__bar {
     width: 40%;
+  }
+
+  .contact .title__bar--primary {
+    left: 40.5%;
+  }
+  .contact .block {
+    border-radius: 5px;
+    box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
   }
 }
 footer {
@@ -8208,7 +8208,7 @@ footer .copyright-detail a {
 @media screen and (max-width:500px) {
   #topBtn {
     right: 4px;
-    bottom: 4px;
+    bottom: 0;
   }
 }
 .preloader {

@@ -19,8 +19,8 @@ $color : #33658a;
     transition: color 0.8s ease-in;
 }
 @media #{$small-width}{
-#topBtn {
+#topBtn { 
     right: 4px;
-    bottom: 4px;
+    bottom: 0;
 }
 }

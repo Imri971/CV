@@ -590,6 +590,21 @@ $color : #33658a;
             height: 88%;
         } }
 
+        .skills{
+            .fab {
+                font-size: 7rem;
+            }
+            .img_skills
+            {
+                width: 84px;
+                height: 112px;
+                margin-bottom: 2rem;
+            } 
+            .skills__bar{
+                width: 40%;
+            }
+        }  
+            
     .contact{
         .title__bar--primary{
             left:40.5%
@@ -599,20 +614,7 @@ $color : #33658a;
             box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
         }   
     }  
-    .skills{
-        .fab {
-            font-size: 7rem;
-        }
-        .img_skills
-        {
-            width: 84px;
-            height: 112px;
-            margin-bottom: 2rem;
-        } 
-        .skills__bar{
-            width: 40%;
-        }
-    }  
+    
   
     
 }
