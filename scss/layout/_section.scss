@@ -1,11 +1,7 @@
 @import "../libs/responsive";
 $color : #33658a;
 
-.pb-4, .py-4 {
 
-    padding-bottom: 43.5rem !important;
-
-}
 
 .mb-7, .my-7 {
 
@@ -25,6 +21,7 @@ $color : #33658a;
     overflow: hidden;
 }
 
+//********************************************* PRESENTATION ******************************************
 .presentation{ 
     background-color: #ffffff;
     height: auto;
@@ -105,6 +102,8 @@ $color : #33658a;
             
     }
 }
+
+//********************************************* FORMATION ****************************************
 .formation{
     background-color: #dddddd;
     .timeline{
@@ -235,17 +234,11 @@ $color : #33658a;
         
     }
 }
- 
+
+//************************************************ SKILLS ********************************************
 .skills{ 
         background-color: #dddddd; 
     
-    .container{
-        padding-left: 5rem;
-        .row{
-            padding: 0 0;
-            margin-left: -34px;
-        }
-    }
     .fab {
         color: $color;
         font-size: 8rem;
@@ -259,7 +252,7 @@ $color : #33658a;
     }
 
     .skills__bar{
-        width: 9em;
+        width: 50%;
         height: 1rem; 
         border-radius: 4px;
         border: 2px solid $color;
@@ -273,8 +266,11 @@ $color : #33658a;
         width: 0px;
         height: 100%;
     }
+    h2{
+        color: $color;
+    }
 }
-
+//****************************************** PORTFOLIO ****************************************
 .folio 
 {
     background-color: #dddddd;
@@ -285,7 +281,7 @@ $color : #33658a;
         max-width: 100%;
     }
 }
-//***************************** EXPERIENCE******************
+//******************************************* EXPERIENCE ************************************
 .experience{
     background-color: #dddddd;
 }
@@ -405,7 +401,7 @@ $color : #33658a;
     box-shadow: 0 0 0 3px rgba(55, 82, 168, 0.2);
 }
 
-//**********************************************************
+//******************************************** HOBBIES **********************************************
 .hobbies
 {
     background: linear-gradient(rgba(23, 23, 26, 0.6), rgba(9, 9, 9, 0.6)), url(../img/wood.jpg);
@@ -444,6 +440,8 @@ $color : #33658a;
     
  
 }
+
+//********************************************** CONTACT****************************************************
 .contact{
     background-color: #dddddd;
     .icon{
@@ -456,8 +454,9 @@ $color : #33658a;
  
         width: 4em;
         left: 34%;}
-    .card{
+    .block{
         display: block;
+        
     }    
     .contact__detail {
         p{
@@ -482,7 +481,7 @@ $color : #33658a;
     transform: translate(-50%);
     color: $color;
 }
-
+//******************************** MEDIA QUERIES ******************************************
 
 @media #{$medium-md}{
     .parallax-window { 
@@ -507,6 +506,8 @@ $color : #33658a;
             }
             .timeline:before{
                 left: 20px;
+                height: 80%;
+                
             } 
             .timeline ul li:nth-child(odd),
             .timeline ul li:nth-child(even){
@@ -535,6 +536,7 @@ $color : #33658a;
         }
         .timeline:before{
             left: 20px;
+           
         } 
         .timeline ul li:nth-child(odd),
         .timeline ul li:nth-child(even){
@@ -580,11 +582,34 @@ $color : #33658a;
 
         width: 4em;
         left: 41%;}    
+    .formation{
+        .timeline:before{
+            height: 88%;
+        } }
 
     .contact{
         .title__bar--primary{
             left:40.5%
         }
-    }    
-        
+        .block{
+            border-radius: 5px;
+            box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
+        }   
+    }  
+    .skills{
+        .fab {
+            font-size: 7rem;
+        }
+        .img_skills
+        {
+            width: 84px;
+            height: 112px;
+            margin-bottom: 2rem;
+        } 
+        .skills__bar{
+            width: 40%;
+        }
+    }  
+  
+    
 }

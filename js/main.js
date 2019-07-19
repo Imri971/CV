@@ -46,7 +46,7 @@ $("#topBtn").click(function(){
           $(window).on("scroll",function(){
               var y = $(this).scrollTop();
               this.console.log(y);
-              if(y> 2000 && y < 3000){
+              if(y> 2200 && y < 3000){
             $('.skills__bar').each(function(){
               $(this).find('.bar').animate({
                 width:$(this).attr('data-percent')

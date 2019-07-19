@@ -1,3 +1,4 @@
+@import "../libs/responsive";
 $color : #33658a;
 #topBtn{
     position: fixed;
@@ -17,6 +18,9 @@ $color : #33658a;
     color: lighten($color, 50%);
     transition: color 0.8s ease-in;
 }
-
-
-
+@media #{$small-width}{
+#topBtn {
+    right: 4px;
+    bottom: 4px;
+}
+}

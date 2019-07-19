@@ -7191,7 +7191,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .parallax4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/apple3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url(../img/applePhone.jpg);
 }
 
 .parallax2, .parallax3, .parallax4 {
@@ -7614,10 +7614,6 @@ body {
   overflow-x: hidden;
 }
 
-.pb-4, .py-4 {
-  padding-bottom: 43.5rem !important;
-}
-
 .mb-7, .my-7 {
   margin-bottom: 5rem !important;
 }
@@ -7825,13 +7821,6 @@ body {
 .skills {
   background-color: #dddddd;
 }
-.skills .container {
-  padding-left: 5rem;
-}
-.skills .container .row {
-  padding: 0 0;
-  margin-left: -34px;
-}
 .skills .fab {
   color: #33658a;
   font-size: 8rem;
@@ -7843,7 +7832,7 @@ body {
   margin-bottom: 2rem;
 }
 .skills .skills__bar {
-  width: 9em;
+  width: 50%;
   height: 1rem;
   border-radius: 4px;
   border: 2px solid #33658a;
@@ -7855,6 +7844,9 @@ body {
   background-color: #33658a;
   width: 0px;
   height: 100%;
+}
+.skills h2 {
+  color: #33658a;
 }
 
 .folio {
@@ -8036,7 +8028,7 @@ body {
   width: 4em;
   left: 34%;
 }
-.contact .card {
+.contact .block {
   display: block;
 }
 .contact .contact__detail p {
@@ -8079,6 +8071,7 @@ body {
   }
   .formation .timeline:before {
     left: 20px;
+    height: 80%;
   }
   .formation .timeline ul li:nth-child(odd),
 .formation .timeline ul li:nth-child(even) {
@@ -8148,8 +8141,28 @@ body {
     left: 41%;
   }
 
+  .formation .timeline:before {
+    height: 88%;
+  }
+
   .contact .title__bar--primary {
     left: 40.5%;
+  }
+  .contact .block {
+    border-radius: 5px;
+    box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
+  }
+
+  .skills .fab {
+    font-size: 7rem;
+  }
+  .skills .img_skills {
+    width: 84px;
+    height: 112px;
+    margin-bottom: 2rem;
+  }
+  .skills .skills__bar {
+    width: 40%;
   }
 }
 footer {
@@ -8191,6 +8204,12 @@ footer .copyright-detail a {
   transition: color 0.8s ease-in;
 }
 
+@media screen and (max-width:500px) {
+  #topBtn {
+    right: 4px;
+    bottom: 4px;
+  }
+}
 .preloader {
   position: fixed;
   top: 0;
