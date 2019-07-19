@@ -15,7 +15,7 @@ $color : #33658a;
 
 #topBtn:hover{
     cursor: pointer;
-    color: lighten($color, 50%);
+    color: darken($color, 20%);
     transition: color 0.8s ease-in;
 }
 @media #{$medium-md}{
