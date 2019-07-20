@@ -33,7 +33,7 @@ $font : sans-serif;
         margin-top: -70px;
         width: 9em;
         height: 9em;
-        filter: contrast(112%) brightness(120%);
+        filter: contrast(112%) brightness(152%);
         border-radius: 100%;
     } 
     .presentation__block{
@@ -305,7 +305,7 @@ $font : sans-serif;
     
     }
     .item-thumbnail.readmore .overthumb {
-        background: #000;
+        background: $color;
         height: 100%;
     }
     .item-thumbnail .overthumb {
@@ -363,9 +363,10 @@ $font : sans-serif;
         font-family: $font;
         text-transform: uppercase;
         text-decoration: none;
+        transition: all 0.3s ease;
     }
     .item-thumbnail.readmore .icons a:hover {
-        color: $color;
+        color: rgba(233, 244, 255, 0.6);
     }
     .class-item h3 { 
 
@@ -437,6 +438,7 @@ $font : sans-serif;
 }
 .content{
     padding-bottom: 10px;
+    text-align: left;
     
 }
 .timeline ul li:nth-child(odd)::before{
@@ -517,7 +519,7 @@ $font : sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
-    .container {
+    .container { 
         padding: 0 0;
     }
     .col-12{
@@ -526,6 +528,7 @@ $font : sans-serif;
 
     .card {
         width: auto;
+        padding-right: 10px !important;
     }
     .icon{
         font-size: 3rem;
@@ -648,7 +651,7 @@ $font : sans-serif;
         .timeline ul li:nth-child(odd),
         .timeline ul li:nth-child(even){
              width: 100%;
-             text-align: left;
+             text-align: center;
              padding-left: 50px;
              padding-bottom: 50px;
         }

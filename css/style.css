@@ -7640,7 +7640,7 @@ body {
   margin-top: -70px;
   width: 9em;
   height: 9em;
-  filter: contrast(112%) brightness(120%);
+  filter: contrast(112%) brightness(152%);
   border-radius: 100%;
 }
 .presentation .presentation__block {
@@ -7878,7 +7878,7 @@ body {
   transform: scale(1.2);
 }
 .folio .item-thumbnail.readmore .overthumb {
-  background: #000;
+  background: #33658a;
   height: 100%;
 }
 .folio .item-thumbnail .overthumb {
@@ -7935,9 +7935,10 @@ body {
   font-family: sans-serif;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 .folio .item-thumbnail.readmore .icons a:hover {
-  color: #33658a;
+  color: rgba(233, 244, 255, 0.6);
 }
 .folio .class-item h3 {
   font-family: "Oswald";
@@ -8006,6 +8007,7 @@ body {
 
 .content {
   padding-bottom: 10px;
+  text-align: left;
 }
 
 .timeline ul li:nth-child(odd)::before {
@@ -8097,6 +8099,7 @@ body {
 }
 .hobbies .card {
   width: auto;
+  padding-right: 10px !important;
 }
 .hobbies .icon {
   font-size: 3rem;
@@ -8201,7 +8204,7 @@ body {
   .timeline ul li:nth-child(odd),
 .timeline ul li:nth-child(even) {
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding-left: 50px;
     padding-bottom: 50px;
   }
@@ -8302,7 +8305,7 @@ footer .copyright-detail a {
   transition: color 0.8s ease-in;
 }
 
-@media screen and (max-width:898px) {
+@media screen and (max-width:500px) {
   #topBtn {
     right: 3px;
     bottom: 0;
