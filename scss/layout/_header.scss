@@ -3,7 +3,7 @@
 @import "../libs/mixins";
 @import "../layout/font";
 $color : #33658a;
-$font:  Poppins; 
+$font:   Georgia, "Times New Roman", Times, serif;
 
 //*************************************************
 
@@ -190,7 +190,7 @@ header .icon {
     padding-left: 10px;
     text-align: center;
     color: white;
-    font-family: sans-serif;
+    font-family:$font;
 }
 
 .banner__title{

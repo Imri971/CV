@@ -1,6 +1,6 @@
 @import "../libs/responsive";
 $color : #33658a;
-$font : sans-serif;
+$font : Georgia, "Times New Roman", Times, serif;
 
 
 .mb-7, .my-7 {
@@ -286,7 +286,7 @@ $font : sans-serif;
     
     .item-thumbnail {
         overflow: hidden;
-        box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
+        
         position: relative;
         height: 400px;
         img{
@@ -294,6 +294,9 @@ $font : sans-serif;
             height: 100%;
             width: 100%;
         }
+    }
+    .item-thumbnail:hover{
+        box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
     }
     .item-thumbnail:hover img {
 
@@ -370,7 +373,7 @@ $font : sans-serif;
     }
     .class-item h3 { 
 
-        font-family: 'Oswald';
+        font-family: $font;
         text-transform: uppercase;
         border-bottom: 8px solid $color;
         font-size: 1.3em;
@@ -560,13 +563,16 @@ $font : sans-serif;
         height: 40px;
         margin-bottom: 1rem;
     }
-    .title__bar--primary{
+    .title__bar--primary{ 
  
         width: 4em;
         left: 34%;}
     .block{
         display: block;
-        
+         
+    }
+    .block:hover{
+        box-shadow: 5px 8px 15px 3px rgba(179, 181, 191, 0.5);
     }    
     .contact__detail {
         p{
@@ -711,6 +717,11 @@ $font : sans-serif;
                 width: 40%;
             }
         }  
+    .folio{
+        .item-thumbnail{
+            box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
+        }
+    }    
 
     .contact{
         .title__bar--primary{
