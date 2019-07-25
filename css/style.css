@@ -7127,7 +7127,7 @@ body {
   position: relative;
   margin: 0 auto;
   padding: 40px 0;
-  width: 1000px;
+  width: 100%;
   box-sizing: border-box;
 }
 .formation .timeline::before {
