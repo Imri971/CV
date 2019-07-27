@@ -1,3 +1,5 @@
+ <link rel="icon" href="img/logo.ico" />
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="icon" href="img/logo.ico" />
+   
   
 </head>
 <body>
@@ -36,17 +38,20 @@
               <nav class="d-flex justify-content-between">
                 
                 <div class="logo">
-                         <img src="img/logo.png" alt="">
-                        </div>
+                    <picture>
+                        <source srcset="img/logo.png" media="(max-width: 898px)" > 
+                        <img src="img/imriWhite.png" alt="" >
+                    </picture>
+                </div>
 
                     <div class="nav__container" >
                         
                         <ul>
-                          <li><a href="#home" id="link"><i class="fas fa-home icon"></i><span>Home</span> </a></li>
-                          <li><a href="#about" id="link"><i class="fas fa-user icon"></i><span>About</span> </a></li>
-                          <li><a href="#skills" id="link"><i class="fas fa-laptop-code icon"></i><span>Skills</span> </a></li>
-                          <li><a href="#folio" id="link"><i class="far fa-image icon"></i><span>Folio</span> </a></li>
-                          <li><a href="#contact" id="link"><i class="fas fa-envelope icon"></i><span>Contact</span></a></li>
+                          <li><a href="#home" id="link"><i class="fas fa-home icon"></i><span id="nav_span">Home</span> </a></li>
+                          <li><a href="#about" id="link"><i class="fas fa-user icon"></i><span id="nav_span">About</span> </a></li>
+                          <li><a href="#skills" id="link"><i class="fas fa-laptop-code icon"></i><span id="nav_span">Skills</span> </a></li>
+                          <li><a href="#folio" id="link"><i class="far fa-image icon"></i><span id="nav_span">Folio</span> </a></li>
+                          <li><a href="#contact" id="link"><i class="fas fa-envelope icon"></i><span id="nav_span">Contact</span></a></li>
                           
                         </ul>
                     </div>
@@ -458,17 +463,17 @@
           <div class="col-lg-2 d-flex mt-4 mb-3 mr-auto ml-auto justify-content-center">
               <div class="card col-lg-4 d-flex justify-content-center" data-aos="zoom-in-left" data-aos-offset="100" data-aos-duration="700"  data-aos-delay="100" data-aos-easing="ease-in-out" >
                 
-              <a href="https://www.facebook.com/imrijeremie.balourd" target="_blank"> <img src="icon/facebook.svg " class="icon" alt=""></a>
+              <a href="https://www.facebook.com/imrijeremie.balourd" target="_blank"> <img src="svg/facebook.svg " class="icon" alt=""></a>
                
              </div>
              <div class="card  col-lg-4 d-flex justify-content-center " data-aos="zoom-in" data-aos-offset="100" data-aos-duration="700"  data-aos-delay="100" data-aos-easing="ease-in-out" >
                 
-              <a href="https://github.com/Imri971" target="_blank"> <img src="icon/github.svg" class="icon" alt=""></a>
+              <a href="https://github.com/Imri971" target="_blank"> <img src="svg/github.svg" class="icon" alt=""></a>
                
              </div>
              <div class="card col-lg-4 d-flex justify-content-center" data-aos="zoom-in-right" data-aos-offset="100" data-aos-duration="700"  data-aos-delay="100" data-aos-easing="ease-in-out" >
                 
-              <a href="https://www.linkedin.com/in/imri-balourd-367215186/" target="_blank"> <img src="icon/linkedin.svg" class="icon" alt=""></a>
+              <a href="https://www.linkedin.com/in/imri-balourd-367215186/" target="_blank"> <img src="svg/linkedin.svg" class="icon" alt=""></a>
                
              </div>
            </div>

@@ -1,6 +1,6 @@
 $color : #33658a;
 footer{
-    background-color: #000;
+    background-color: $color;
     height: auto;
 
     img{
@@ -16,9 +16,9 @@ footer{
         width: auto;
     }
     .copyright-detail {
-        color: rgb(93, 94, 97);
+        color: #161618;
         a{ 
-            color:$color;
+            color:white;
         }
     }
    

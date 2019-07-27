@@ -19,10 +19,13 @@ $(window).on("scroll", function() {
     if($(window).scrollTop() > 300){
         $('nav').addClass('white');
         $('#topBtn').css("display","block");
+        $(".logo").css("opacity","1");
+        
     }
     else {
         $('nav').removeClass('white');
         $('#topBtn').css("display","none");
+        $(".logo").css("opacity","0");
     }
 });
 
