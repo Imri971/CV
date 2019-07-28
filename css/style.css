@@ -7683,6 +7683,9 @@ body {
   .skills .skills__bar {
     width: 40%;
   }
+  .skills .tools {
+    margin-bottom: 20px !important;
+  }
 
   .folio .item-thumbnail {
     box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
