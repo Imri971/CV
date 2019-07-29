@@ -652,6 +652,7 @@ $font : Georgia, "Times New Roman", Times, serif;
         }
         .timeline:before{
             left: 20px;
+            height: 81.5%;
            
         } 
         .timeline ul li:nth-child(odd),
@@ -678,6 +679,9 @@ $font : Georgia, "Times New Roman", Times, serif;
     .hobbies{
         background-attachment: scroll;
         background-size: 100% 700px;
+        .card{
+            width: 106px;
+        }
     } 
     .contact{
         
@@ -726,7 +730,10 @@ $font : Georgia, "Times New Roman", Times, serif;
             box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
         }
     }    
+    .timeline::before {
 
+        left: 20px;
+        height: 86.5%;}
     .contact{
         .title__bar--primary{
             left:40.5%
@@ -739,4 +746,13 @@ $font : Georgia, "Times New Roman", Times, serif;
     
   
     
+}
+@media #{$xsmall-width}{
+    .hobbies{
+        padding-top: 24px !important;
+        
+        background-size: 100% 864px;
+    }
+
+
 }
