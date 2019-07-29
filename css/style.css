@@ -7730,10 +7730,11 @@ footer .copyright {
   width: auto;
 }
 footer .copyright-detail {
-  color: #161618;
+  color: white;
 }
 footer .copyright-detail a {
   color: white;
+  text-decoration: underline;
 }
 
 #topBtn {
