@@ -378,7 +378,7 @@ $font : Georgia, "Times New Roman", Times, serif;
         border-bottom: 8px solid $color;
         font-size: 1.3em;
         font-weight: 500;
-        margin: 0;
+        margin:7px ;
         a{
             color: #3b3b3b;
             transition: all .3s ease;
@@ -676,6 +676,13 @@ $font : Georgia, "Times New Roman", Times, serif;
             right: inherit;
         }
 
+      .folio{
+        .class-item h3 { 
+            a{  
+                line-height: 27px; }
+         }  
+      }  
+
     .hobbies{
         background-attachment: scroll;
         background-size: 100% 700px;
@@ -728,7 +735,7 @@ $font : Georgia, "Times New Roman", Times, serif;
     .folio{
         .item-thumbnail{
             box-shadow: 6px 8px 4px rgba(162, 165, 170, 0.6);
-        }
+        } 
     }    
     .timeline::before {
 
