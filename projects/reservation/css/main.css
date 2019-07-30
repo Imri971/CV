@@ -510,7 +510,7 @@ vertical-align: middle;
 }
 .card{
     border-radius: 0.3125rem;
- padding: 2.5rem 0 0;
+ padding: 0.5rem 0 0;
 border: none;
  background-color: #fff;
  border-radius: 0.3125rem;
@@ -519,7 +519,7 @@ border: none;
 }
 
 .card-body {
-    padding: 2.5rem 2rem;
+    padding: 0.5rem 2rem 2.5rem;
 }
 
 
