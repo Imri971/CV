@@ -218,7 +218,7 @@ margin: 1.2em auto 0.7em;
 .button
 {
     display: block;
-    width: 95px;
+    width: 100px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
