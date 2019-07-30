@@ -217,6 +217,7 @@ margin: 1.2em auto 0.7em;
 
 .button
 {
+    white-space: nowrap;
     display: block;
     width: 100px;
     position: relative;
