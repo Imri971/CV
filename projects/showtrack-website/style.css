@@ -134,7 +134,7 @@ main{
 .articles
 {
     width: 100%;
-    margin: 0 2.1em 2em 10px;
+    margin: 0 2.1em 2em 0;
     border: 1px solid black;
     padding: 2em 4% 3em;
     height: auto;
@@ -579,10 +579,6 @@ margin-bottom: 2em;
 
     .next{
         transform: translate(-55%);
-    }
-
-    aside{
-        margin-left: 8px;
     }
     
     .top_footer

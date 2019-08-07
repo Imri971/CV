@@ -39,7 +39,7 @@ $font : Georgia, "Times New Roman", Times, serif;
     .presentation__block{
         background: #f2f2f2;
         margin-top: 3em;
-        box-shadow: 6px 8px 24px rgba(159, 160, 161, 0.4);
+        box-shadow: 12px 21px 24px rgba(159, 160, 161, 0.4);
     }
     .presentation__text{
         padding:0px 8rem 1rem;
@@ -724,10 +724,13 @@ $font : Georgia, "Times New Roman", Times, serif;
                 height: 112px;
                 margin-bottom: 2rem;
             } 
-            .skills__bar{
-                width: 40%;
+            .skills_block{
+                width: 50% !important;
             }
-
+            .skills__bar{
+                width: 60%;
+            }
+            
             .tools{
                 margin-bottom: 20px !important;
             }
